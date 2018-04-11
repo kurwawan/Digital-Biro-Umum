@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/mPhoto"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:foreground="@drawable/background_rectangleradius_v3"
+            android:background="@drawable/no_image"
+            android:layout_margin="8dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/mNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="LALA"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Bank BRI" />
+
+            <TextView
+                android:id="@+id/mNoRekening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mNama"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:paddingTop="8dp"
+                android:textColor="@android:color/black"
+                tools:text="No Rekening :" />
+            <TextView
+                android:id="@+id/mAtasNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mNoRekening"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:paddingTop="4dp"
+                android:textColor="@android:color/black"
+                tools:text="Atas Nama" />
+            <Button
+                android:id="@+id/mBtnDetail"
+                android:layout_below="@id/mAtasNama"
+                android:layout_toLeftOf="@id/mBtnLink"
+                android:layout_toStartOf="@id/mBtnLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail"
+                android:textStyle="bold"
+                android:theme="@style/PrimaryFlatButton" />
+            <Button
+                android:id="@+id/mBtnLink"
+                android:layout_below="@id/mAtasNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/e_banking"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:theme="@style/PrimaryFlatButton" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asus.d_biumsemarang1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBRSPVzX8iFmj3JoBG7HqkuHNsK-C7r-4U" />
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppSplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginScreenActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity
+            android:name=".ResetScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity
+            android:name=".DetailActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDetail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".RentActivity"
+            android:parentActivityName=".DetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DetailActivity" />
+        </activity>
+        <activity
+            android:name=".ScheduleActivity"
+            android:parentActivityName=".DetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DetailActivity" />
+        </activity>
+
+        <service android:name=".fcm.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.MyFirebaseMessageService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".DetailSewaActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <receiver
+            android:name=".utils.MyVerificationBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.asus.d_biumsemarang1.verification" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ProfileActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDetail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".DetailProfileActivity"
+            android:parentActivityName=".ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar"
+            android:windowSoftInputMode="stateUnchanged">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProfileActivity" />
+        </activity>
+        <activity
+            android:name=".FotoKTPActivity"
+            android:parentActivityName=".ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProfileActivity" />
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar"
+            android:windowSoftInputMode="stateUnchanged|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MapActivity"
+            android:parentActivityName=".DetailActivity"
+            android:theme="@style/AppNoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DetailActivity" />
+        </activity>
+        <activity
+            android:name=".PayActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".AplikasiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity android:name=".KontakActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDetail"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

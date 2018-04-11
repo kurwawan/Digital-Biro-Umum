@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#B71C1C</color>
+    <color name="colorPrimaryGradient">#EF9A9A</color>
+    <color name="colorPrimaryDarkGradient">#FF4081</color>
+    <color name="colorAccent">#009688</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorHint">#999999</color>
+    <color name="colorLogin">#000000</color>
+    <color name="colorTouch">#59FFFFFF</color>
+    <color name="colorNoImage">#9E9E9E</color>
+    <color name="colorTouchText">#80F44336</color>
+    <color name="colorBgTransparent">#B3F44336</color>
+    <color name="colorProgress">#E53935</color>
+    <color name="colorInActiveBottom">#212121</color>
+    <color name="colorBgMain">#80E0E0E0</color>
+    <color name="stroke">#40000000</color>
+    <color name="stroke_v2">#1A000000</color>
+    <color name="stroke_v3">#0D000000</color>
+    <color name="colorTouch2">#59000000</color>
+    <color name="mdtp_accent_color">#F44336</color>
+    <color name="mdtp_accent_color_dark">#B71C1C</color>
+    <color name="color_telephone">#0000FF</color>
+    <color name="color_rejected">#D50000</color>
+    <color name="color_verified">#4CAF50</color>
+    <color name="color_notYet">#FF9800</color>
+</resources>

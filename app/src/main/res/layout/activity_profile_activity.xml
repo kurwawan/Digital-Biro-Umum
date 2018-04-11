@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:popupTheme="@style/Theme.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBgMain"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/photoProfile"
+                    android:layout_width="80dp"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:textSize="28sp"
+                    tools:text="HZ"
+                    android:background="@drawable/circle_bg"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:id="@+id/judulEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@id/photoProfile"
+                    android:layout_toRightOf="@id/photoProfile"
+                    android:text="@string/email"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/judulEmail"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:paddingBottom="4dp"
+                    android:layout_toRightOf="@id/photoProfile"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    tools:text="kevin_dj97@ymail.com" />
+                <TextView
+                    android:id="@+id/mPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_below="@id/mEmail"
+                    android:padding="4dp"
+                    android:background="@drawable/background_rectangleradius_v2"
+                    android:layout_toEndOf="@id/photoProfile"
+                    android:layout_toRightOf="@id/photoProfile"
+                    android:text="@string/change_password"
+                    android:textColor="@android:color/black"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/stroke_v2" />
+
+            <LinearLayout
+                android:id="@+id/mNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:foreground="?attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_v2"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:text="-"
+                    tools:text="Kevin D" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/stroke_v2" />
+
+            <LinearLayout
+                android:id="@+id/mHp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:foreground="?attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/hp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:text="-"
+                    tools:text="082133024312" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/stroke_v2" />
+
+            <LinearLayout
+                android:id="@+id/mFoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/judulFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ktp_only"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/foto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="-"
+                    android:textSize="18sp"
+                    tools:text="Sudah Ada" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/stroke_v2" />
+
+            <LinearLayout
+                android:id="@+id/mFotoSelf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/judulFotoSelf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ktp_only"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/fotoSelf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="-"
+                    android:textSize="18sp"
+                    tools:text="Sudah Ada" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/stroke_v2" />
+            <TextView
+                android:id="@+id/mEmailVerification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/email_verif"
+                android:drawableLeft="@drawable/mail"
+                android:drawableStart="@drawable/mail"
+                android:drawablePadding="16dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/stroke_v2" />
+            <TextView
+                android:id="@+id/mLogOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/log_out"
+                android:drawableLeft="@drawable/rotate_logout"
+                android:drawableStart="@drawable/rotate_logout"
+                android:drawablePadding="16dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/stroke_v2" />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.asus.d_biumsemarang1.utils.ExtendsSwipeRefresh
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgMain">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mRecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="8dp"
+                android:clipToPadding="false"
+                />
+        <ProgressBar
+            android:id="@+id/mProgress1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:id="@+id/mConnectionLinear1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/mImage1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_signal"/>
+            <TextView
+                android:id="@+id/mKeterangan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                tools:text="@string/check_connection"/>
+            <Button
+                android:id="@+id/mBtnCoba1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@color/colorPrimary"
+                android:text="@string/try_again"
+                android:layout_marginTop="8dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+</com.example.asus.d_biumsemarang1.utils.ExtendsSwipeRefresh>

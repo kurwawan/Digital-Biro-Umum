@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/gedung"
+        android:title="@string/gedung"
+        android:icon="@drawable/gedung" />
+    <item android:id="@+id/venue"
+        android:title="@string/venue"
+        android:icon="@drawable/venue" />
+    <item android:id="@+id/riwayat"
+        android:title="@string/history"
+        android:icon="@drawable/history" />
+</menu>

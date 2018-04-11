@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/mImage"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/no_image"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            tools:text="Gedung\n wkwkw"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:maxLines="2" />
+
+        <TextView
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            tools:text="Jalan KWKWKW\nwkwkw"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:maxLines="2" />
+    </LinearLayout>
+
+</LinearLayout>

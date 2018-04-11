@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:popupTheme="@style/Theme.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:id="@+id/mRelative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="com.example.asus.d_biumsemarang1.DetailProfileActivity">
+
+                <TextView
+                    android:id="@+id/mJudulHp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:text="+62"
+                    android:textSize="20sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/mWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/mJudulHp"
+                    android:layout_toRightOf="@id/mJudulHp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="25"
+                    app:errorEnabled="true"
+                    app:hintEnabled="false">
+
+                    <com.example.asus.d_biumsemarang1.utils.ClearableEditText
+                        android:id="@+id/mEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_rectangleradius_v2"
+                        android:focusable="true"
+                        android:hint="@string/name_v2"
+                        android:inputType="text"
+                        android:maxLength="25"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/colorLogin"
+                        android:textColorHint="@color/colorHint"
+                        android:textCursorDrawable="@null"
+                        android:textSize="20sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/mBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mWrapper"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mLinear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp">
+
+                    <com.example.asus.d_biumsemarang1.utils.ClearableEditText
+                        android:id="@+id/mEditPassword1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_rectangleradius_v2"
+                        android:fontFamily="sans-serif"
+                        android:hint="@string/old_password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/colorLogin"
+                        android:textColorHint="@color/colorHint"
+                        android:textCursorDrawable="@null"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/mImgPassword1"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background_rectangleradius_v2"
+                        android:gravity="center"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/visible_on" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp">
+
+                    <com.example.asus.d_biumsemarang1.utils.ClearableEditText
+                        android:id="@+id/mEditPassword2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_rectangleradius_v2"
+                        android:fontFamily="sans-serif"
+                        android:hint="@string/new_password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/colorLogin"
+                        android:textColorHint="@color/colorHint"
+                        android:textCursorDrawable="@null"
+                        android:textSize="20sp" />
+                    <ImageView
+                        android:id="@+id/mImgPassword2"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background_rectangleradius_v2"
+                        android:gravity="center"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/visible_on" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/mBtnPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="@string/change_password"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

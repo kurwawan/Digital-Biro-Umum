@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "706962910342",
+    "firebase_url": "https://digital-biroumum-semarang.firebaseio.com",
+    "project_id": "digital-biroumum-semarang",
+    "storage_bucket": "digital-biroumum-semarang.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706962910342:android:d5ea32c6c5fe0080",
+        "android_client_info": {
+          "package_name": "com.example.asus.d_biumsemarang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706962910342-jghn9vf37dskd3h42h889ifld4e3o8ch.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asus.d_biumsemarang",
+            "certificate_hash": "ccb1ae594d67aad0c9d71b54c815acf89ddc6701"
+          }
+        },
+        {
+          "client_id": "706962910342-rg0bm7jftdtii7egsuhjtnbhlf0kkgop.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRSPVzX8iFmj3JoBG7HqkuHNsK-C7r-4U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706962910342-rg0bm7jftdtii7egsuhjtnbhlf0kkgop.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706962910342:android:0907fe7b933a973d",
+        "android_client_info": {
+          "package_name": "com.example.asus.d_biumsemarang1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706962910342-4aacc3ttg758cfc1fv72ggcclhmqjevs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asus.d_biumsemarang1",
+            "certificate_hash": "ccb1ae594d67aad0c9d71b54c815acf89ddc6701"
+          }
+        },
+        {
+          "client_id": "706962910342-rg0bm7jftdtii7egsuhjtnbhlf0kkgop.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRSPVzX8iFmj3JoBG7HqkuHNsK-C7r-4U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706962910342-rg0bm7jftdtii7egsuhjtnbhlf0kkgop.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

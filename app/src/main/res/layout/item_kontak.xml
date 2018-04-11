@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/nama"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            tools:text="AAAAAAA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/noHp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            tools:text="081812029393"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/telepon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:padding="16dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/call"/>
+
+</LinearLayout>

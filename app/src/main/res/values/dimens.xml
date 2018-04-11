@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_foto">32dp</dimen>
+    <dimen name="barcode_size">225dp</dimen>
+    <dimen name="toolbar">64dp</dimen>
+</resources>
